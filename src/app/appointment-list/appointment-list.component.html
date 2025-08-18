@@ -4,10 +4,10 @@
   <button (click)="createAppointment()">Add</button>
 </div>
 <ul>
-
   <li *ngFor="let appointment of appointments">
     <p>{{appointment.id}}</p>
     <p>{{appointment.data | date:'dd.MM.yyyy'}}</p>
     <p>{{appointment.title}}</p>
+    <button (click)="deleteAppointment(appointment.id)">Delete</button>
   </li>
 </ul>
