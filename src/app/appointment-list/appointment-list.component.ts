@@ -31,8 +31,7 @@ export class AppointmentListComponent {
   showAppointment():Appointment[]{
     return this.appointments
   }
-  deleteAppointment(id:number){
-    let index = this.appointments.findIndex((appointment)=> appointment.id === id)
+  deleteAppointment(index:number){
     this.appointments.splice(index,1)
   }
 }
