@@ -1,0 +1,44 @@
+.inputs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.inputs input {
+  padding: 8px 4px;
+  border-radius: 5px;
+}
+
+.inputs button{
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+.list,.list-head {
+  min-width: 750px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+ul{
+  margin-top: 30px;
+}
+
+.list p ,.list-head p{
+  width: 210px;
+}
+.list-head p{
+ font-weight: bold;
+}
+
+.list button{
+  height: 30px;
+  width: 90px;
+  background-color: #E71D36;
+  border-radius: 5px;
+  border:none;
+  color: white;
+}

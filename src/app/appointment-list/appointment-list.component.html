@@ -1,10 +1,15 @@
-<div >
+<div class="inputs">
   <input [(ngModel)]="newAppointmentTitle" type="text" id="title" placeholder="title">
   <input [(ngModel)]="newAppointmentDate" type="date" id="date" placeholder="date">
   <button (click)="createAppointment()">Add</button>
 </div>
 <ul>
-  <li *ngFor="let appointment of appointments;index as i">
+  <li class="list-head">
+    <p>Id</p>
+    <p>Data</p>
+    <p>Título</p>
+  </li>
+  <li *ngFor="let appointment of appointments;index as i" class="list">
     <p>{{appointment.id}}</p>
     <p>{{appointment.data | date:'dd.MM.yyyy'}}</p>
     <p>{{appointment.title}}</p>
